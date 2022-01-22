@@ -1,3 +1,90 @@
-dir {
-    border: solid;
+div {
+    width: 500px;
+    height: 100px;
+    border: solid 1px;
+    position: relative;
+    margin: 0 auto;
+    background: #e5edef;
+    border-radius: 15px;
+}
+
+.hd {
+    margin: 5px 1% 0 1%;
+    height: 50px;
+    width: 50px;
+    float: left;
+    border: solid 1px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f1f5f7;
+}
+
+#logo {
+    font-size: 13px;
+    text-align: center;
+    height: 80px;
+    width: 100px;
+}
+
+#brand_name {
+    margin-left: 25px;
+    height: 50px;
+    width: 250px;
+    text-align: center;
+}
+
+#contact {
+    float: right;
+    height: 50px;
+    width: 70px;
+    font-size: 7px;
+    text-align: center;
+}
+
+ul.list > li {
+    float: right;
+    margin: 3% 15px 0 0;
+    padding: 1px 3px;
+    display: inline-block;
+    font-size: 10px;
+    list-style: none;
+    border: solid 1px;
+    border-radius: 40px;
+    background-color: #f1f5f7;
+}
+
+.body {
+    height: 300px;
+    margin-top: 5px;
+    border: solid 1px;
+    border-radius: 15px 15px 0 0;
+}
+
+.block1 {
+    border: solid 1px;
+    height: 170px;
+    width: 170px;
+    float: right;
+    text-align: center;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f1f5f7;
+}
+
+footer {
+    position: relative;
+    margin: 5px auto;
+    height: 70px;
+    width: 500px;
+    border: solid 1px;
+    border-radius: 0 0 15px 15px;
+    background-color: #e5edef;
+    text-align: center;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
