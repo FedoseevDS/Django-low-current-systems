@@ -1,6 +1,11 @@
 from django.shortcuts import render
 
 # Create your views here.
+
+menu = [{'title': ''}
+
+]
+
 def index(request):
     return render(request, 'main/index.html')
 

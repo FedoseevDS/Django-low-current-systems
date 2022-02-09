@@ -1,10 +1,37 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Главная страница</title>
+    <link rel="stylesheet" type='text/css' href="{% static 'main/css/main.css' %}">
 </head>
 <body>
+{% block mainmenu %}
+    <header>
+        <div class="header">
+            <img class='logo' src="{% static 'main/img/logo.jpg' %}">
+            <div class="brandname">
+                <p>Слаботочные системы</p>
+                <lu class="button">
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="object.html">Обекты</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </lu>
+            </div>
+            <div class="contacts">
+                <lu id="contacts">
+                    <li>8-888-888-88-88</li>
+                    <li>info@abrakadabra.ru</li>
+                    <li>с 9:00 по 18:00</li>
+                </lu>
+            </div>
 
+        </div>
+    </header>
+{% endblock mainmenu %}
+
+{% block content %}
+{% endblock %}
 </body>
 </html>

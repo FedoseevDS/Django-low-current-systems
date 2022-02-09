@@ -1,90 +1,77 @@
-div {
-    width: 500px;
-    height: 100px;
-    border: solid 1px;
-    position: relative;
-    margin: 0 auto;
-    background: #e5edef;
-    border-radius: 15px;
+body {
+    margin: 0 0 0 6px;
+    padding: 0;
+    width: 98%;
+    min-width: 620px;
+    height: 100%;
 }
 
-.hd {
-    margin: 5px 1% 0 1%;
-    height: 50px;
-    width: 50px;
-    float: left;
-    border: solid 1px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #f1f5f7;
-}
-
-#logo {
-    font-size: 13px;
-    text-align: center;
-    height: 80px;
-    width: 100px;
-}
-
-#brand_name {
-    margin-left: 25px;
-    height: 50px;
-    width: 250px;
-    text-align: center;
-}
-
-#contact {
-    float: right;
-    height: 50px;
-    width: 70px;
-    font-size: 7px;
-    text-align: center;
-}
-
-ul.list > li {
-    float: right;
-    margin: 3% 15px 0 0;
-    padding: 1px 3px;
-    display: inline-block;
-    font-size: 10px;
-    list-style: none;
-    border: solid 1px;
-    border-radius: 40px;
-    background-color: #f1f5f7;
-}
-
-.body {
-    height: 300px;
-    margin-top: 5px;
-    border: solid 1px;
-    border-radius: 15px 15px 0 0;
-}
-
-.block1 {
-    border: solid 1px;
-    height: 170px;
-    width: 170px;
-    float: right;
-    text-align: center;
-    font-size: 13px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #f1f5f7;
-}
-
-footer {
-    position: relative;
-    margin: 5px auto;
+div.header {
     height: 70px;
-    width: 500px;
-    border: solid 1px;
-    border-radius: 0 0 15px 15px;
-    background-color: #e5edef;
-    text-align: center;
-    font-size: 13px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    border: 0.1px solid;
+    background: #fcfcfc;
+    border-radius: 10px;
 }
+
+.logo {
+    opacity: 0.6;
+    width: 120px;
+    height: 60px;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin: 5px 0 0 5px;
+    float: left;
+}
+
+.brandname {
+    float: left;
+    border: 0;
+    margin: 7px;
+    width: 350px;
+    height: 57px;
+    text-align: center;
+    padding: 0;
+}
+
+p {
+    margin: -1px 0 3px 0;
+    padding: 0;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+lu {
+    list-style: none;
+}
+
+
+.button li {
+    display: inline;
+    border: 0.5px solid;
+    border-radius: 7px;
+    text-size: 4px;
+    font-size: 10px;
+    margin: 20px;
+    padding: 1px 2px 1px 2px;
+
+}
+
+div.contacts {
+    border: 0;
+    float: left;
+    width: 100px;
+    height: 40px;
+    padding: 0 0 0 0;
+    margin: 24px 0 0 0;
+}
+
+#contacts li {
+    text-align: center;
+    font-size: 10px;
+}
+
+a {
+    list-style: none;
+}
+
