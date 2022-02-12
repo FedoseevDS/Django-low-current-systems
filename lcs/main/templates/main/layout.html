@@ -3,20 +3,24 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Главная страница</title>
+    <title>{{ title }}</title>
     <link rel="stylesheet" type='text/css' href="{% static 'main/css/main.css' %}">
+    <link rel="stylesheet" type='text/css' href="{% static 'main/css/index.css' %}">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'main/img/logo3.jpg' %}">
 </head>
 <body>
 {% block mainmenu %}
-    <header>
-        <div class="header">
-            <img class='logo' src="{% static 'main/img/logo.jpg' %}">
+    <header><center>
+        <div class="header"><center>
+            <a href="{% url 'home' %}"><img class='logo' src="{% static 'main/img/logo3.jpg' %}"></a>
             <div class="brandname">
                 <p>Слаботочные системы</p>
                 <lu class="button">
-                    <li><a href="about.html">О нас</a></li>
-                    <li><a href="object.html">Обекты</a></li>
-                    <li><a href="contact.html">Контакты</a></li>
+                    <li><a href="{% url 'about' %}">О нас</a></li>
+                    <li><a href="{% url 'object' %}">Обекты</a></li>
+                    <li><a href="{% url 'price' %}">Цены</a></li>
+                    <li><a href="{% url 'client' %}">Клиенты</a></li>
+                    <li><a href="{% url 'contact' %}">Контакты</a></li>
                 </lu>
             </div>
             <div class="contacts">
@@ -26,9 +30,8 @@
                     <li>с 9:00 по 18:00</li>
                 </lu>
             </div>
-
-        </div>
-    </header>
+       </div>
+    </center></header>
 {% endblock mainmenu %}
 
 {% block content %}
