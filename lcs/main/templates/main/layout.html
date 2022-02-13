@@ -3,6 +3,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
     <link rel="stylesheet" type='text/css' href="{% static 'main/css/main.css' %}">
     <link rel="stylesheet" type='text/css' href="{% static 'main/css/index.css' %}">
@@ -11,7 +12,7 @@
 <body>
 {% block mainmenu %}
     <header><center>
-        <div class="header"><center>
+        <div class="header">
             <a href="{% url 'home' %}"><img class='logo' src="{% static 'main/img/logo3.jpg' %}"></a>
             <div class="brandname">
                 <p>Слаботочные системы</p>
@@ -36,5 +37,14 @@
 
 {% block content %}
 {% endblock %}
+
+<footer>
+    <center><div class="footer">
+        <p>Проверка Футора</p>
+    </div></center>
+</footer>
+
+
+
 </body>
 </html>

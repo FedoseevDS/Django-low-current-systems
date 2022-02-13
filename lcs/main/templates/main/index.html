@@ -1,10 +1,17 @@
 {% extends 'main/layout.html' %}
 
 {% block content %}
-<center><div class="index_page"><br>
+<center><div class="index_page">
     {% for mp in index_page %}
-    <p>{{ mp }}</p>
-    {% endfor %}
 
+{% if mp.photo %} <!-- если поля содержит фото -->
+	<p><img class="img-index-right" src="{{ mp.photo.url }}"></p> <!-- отображаем по атрибуту фото и берем у него атрибут url -->
+{% endif %}
+    <p class="index_heading">{{ mp.title }}</p>
+    <p class="index_p">{{ mp.content|linebreaksbr }}</p><br>
+
+{% endfor %}
 </div></centre>
 {% endblock %}
+
+
