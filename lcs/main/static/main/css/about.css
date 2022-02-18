@@ -1,4 +1,4 @@
-div.index_page {
+.about_page {
     margin: 10px 0 0 0;
     padding: 10px;
     border-top: 1px solid;
@@ -9,24 +9,23 @@ div.index_page {
     box-shadow: 0px 0px 20px -15px inset;
 }
 
-p.index_heading {
-    font-size: 25px;
-    text-align: left;
-    margin: -20px 0 20px 160px;
+.img-about {
+    margin: 10px 0 0 0;
+    width: 1100px;
+    height: auto;
     padding: 0;
+}
+
+.about_heading {
+    font-size: 25px;
     font-weight: 900;
 }
 
-p.index_p {
-    font-size: 17px;
-    margin: 0;
-    padding: 0;
+.about_p {
     text-align: justify;
 }
 
-.img-index-right {
-    float: right;
-    height: 400px;
-    width: auto;
-    margin: -20px 0 0 5px;
+.about_p2 {
+    text-align: justify;
+    margin: -20px 0 0 0;
 }

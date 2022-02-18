@@ -8,7 +8,8 @@ def index(request):
     return render(request, 'main/index.html', {'index_page': index_page, 'title': 'Главная страница'})
 
 def about(request):
-    return render(request, 'main/about.html', {'title': 'О нас'})
+    about_page = About_page.objects.all()
+    return render(request, 'main/about.html', {'about_page': about_page, 'title': 'О нас'})
 
 def price(request):
     return render(request, 'main/price.html', {'title': 'Цены'})

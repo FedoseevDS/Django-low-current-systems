@@ -4,3 +4,4 @@ from .models import *
 # Register your models here.
 
 admin.site.register(Main_page)
+admin.site.register(About_page)

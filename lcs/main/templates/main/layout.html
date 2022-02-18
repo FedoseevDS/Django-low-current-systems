@@ -7,6 +7,7 @@
     <title>{{ title }}</title>
     <link rel="stylesheet" type='text/css' href="{% static 'main/css/main.css' %}">
     <link rel="stylesheet" type='text/css' href="{% static 'main/css/index.css' %}">
+    <link rel="stylesheet" type='text/css' href="{% static 'main/css/about.css' %}">
     <link rel="shortcut icon" type="image/x-icon" href="{% static 'main/img/logo3.jpg' %}">
 </head>
 <body>
@@ -19,14 +20,14 @@
                 <lu class="button">
                     <li><a href="{% url 'about' %}">О нас</a></li>
                     <li><a href="{% url 'object' %}">Обекты</a></li>
-                    <li><a href="{% url 'price' %}">Цены</a></li>
-                    <li><a href="{% url 'client' %}">Клиенты</a></li>
+                    <li><a href="{% url 'price' %}">Услуги</a></li>
+
                     <li><a href="{% url 'contact' %}">Контакты</a></li>
                 </lu>
             </div>
             <div class="contacts">
                 <lu id="contacts">
-                    <li>8-888-888-88-88</li>
+                    <li>8(888)888-88-88</li>
                     <li>info@abrakadabra.ru</li>
                     <li>с 9:00 по 18:00</li>
                 </lu>

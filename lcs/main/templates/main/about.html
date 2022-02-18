@@ -1,5 +1,19 @@
 {% extends 'main/layout.html' %}
 
 {% block content %}
-<h1><center>Блок о нас</center></h1>
+<center><div class="about_page">
+    {% for ap in about_page %}
+
+    <p class="about_heading">{{ ap.title }}</p>
+    <p class="about_p">{{ ap.content|linebreaksbr }}
+{% if ap.photo %} <!-- если поля содержит фото -->
+	    <img class="img-about" src="{{ ap.photo.url }}"> <!-- отображаем по атрибуту фото и берем у него атрибут url -->
+    </p><br>
+    <p class="about_p2">{{ ap.content_2|linebreaksbr }}
+    {% endif %}
+
+
+
+{% endfor %}
+</div></center>
 {% endblock %}
